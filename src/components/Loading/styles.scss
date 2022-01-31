@@ -1,0 +1,39 @@
+.container-loading{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loading{
+        width: 5rem;
+        height: 5rem;
+    
+        border-radius: 50%;
+        border: 4px solid #8257e5;
+        margin-top: -20rem;
+
+        position: relative;
+
+        animation: animationCircle 600ms linear infinite;
+
+        &::before{
+            content: "";
+            width: 1.4rem;
+            height: 1.4rem;
+            
+            border-radius: 50%;
+
+            background: #111;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    }
+}
+
+@keyframes animationCircle {
+    to{
+        transform: rotate(405deg);
+    }
+}
