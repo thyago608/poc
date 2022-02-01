@@ -7,9 +7,9 @@ export function Header(){
             <img src={logo} alt="logo" />
             <nav>
                 <a href="/">Home</a>
-                <a href="#">Products</a>
+                <a href="/products">Products</a>
                 <a href="/contacts">Contacts</a>
-                <a href="#">FAQ</a>
+                <a href="/faq">FAQ</a>
             </nav>
         </header>
     );
